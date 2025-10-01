@@ -9,8 +9,8 @@ import plotly.express as px
 
 
 # df = pd.read_csv(r"C:\Users\rianp\Downloads\LuxuryLoanPortfolio.csv")
-path = os.path.join("data", "LuxuryLoanPortfolio.csv")
-df = pd.read_csv(path)
+# path = os.path.join("data", "LuxuryLoanPortfolio.csv")
+df = pd.read_csv("data/LuxuryLoanPortfolio.csv")
 df["funded_date"] = pd.to_datetime(df["funded_date"], errors="coerce")
 df = df.dropna(subset=["funded_date"])
 df["funded_year"] = df["funded_date"].dt.year
