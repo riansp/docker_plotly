@@ -32,6 +32,14 @@ def pie_chart(df):
         columns={"index": "Category", "BUILDING CLASS CATEGORY": "Count"}
         )
 
+def pie_chart(df):
+    return df["BUILDING CLASS CATEGORY"].value_counts().reset_index().rename(
+        columns={
+            "BUILDING CLASS CATEGORY": "Category", 
+            "count": "Count"  
+        }
+    )
+    
 def line_chart(df):
     monthly_balance = (
         df.groupby(df["funded_date"].dt.to_period("M"))["loan balance"].sum().reset_index()
