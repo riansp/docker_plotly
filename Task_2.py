@@ -1,6 +1,6 @@
 ## Check out the dashboard here! 
-    -> http://127.0.0.1:8050/ if running in local
-    -> click the open port and fill your port so click OK, if error copy the url and open in new broswer
+#    -> http://127.0.0.1:8050/ if running in local
+#    -> click the open port and fill your port so click OK, if error copy the url and open in new broswer
 
 
 import os
