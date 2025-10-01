@@ -8,7 +8,7 @@ from dash.dependencies import Input, Output
 import plotly.express as px
 
 
-# df = pd.read_csv(r"C:\Users\rianp03\Downloads\LuxuryLoanPortfolio.csv")
+# df = pd.read_csv(r"C:\Users\rianp\Downloads\LuxuryLoanPortfolio.csv")
 path = os.path.join("data", "LuxuryLoanPortfolio.csv")
 df = pd.read_csv(path)
 df["funded_date"] = pd.to_datetime(df["funded_date"], errors="coerce")
